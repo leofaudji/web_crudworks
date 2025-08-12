@@ -24,4 +24,4 @@ if (hash_equals($hash, $hub_signature_parts[1])) {
     http_response_code(403);
     echo "Verifikasi gagal";
 }
-?>  
+?>   
