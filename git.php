@@ -12,7 +12,7 @@ $hash = hash_hmac('sha1', $request_body, $secret);
 
 if (hash_equals($hash, $hub_signature_parts[1])) {
     // Jalankan git pull
-    chdir('/home/crudwork/website3');
+    chdir('/home/crudwork/website2');
     $output = shell_exec('git pull origin main 2>&1');
     echo "<pre>$output</pre>";
     // Log aktivitas (opsional)
